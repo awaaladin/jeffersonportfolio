@@ -7,6 +7,9 @@
 <title>Emmanuel Jefferson — Portfolio</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <meta name="theme-color" content="#080b0f">
 <style>
   :root {
     --bg: #080b0f;
@@ -1137,35 +1140,6 @@
           <a href="https://github.com/awaaladin/SHACK360_pkg" target="_blank" class="tech-tag">Code</a>
           <span class="tech-tag">Python</span>
           <span class="tech-tag">C++</span>
-        </div>
-        <div style="margin-top:12px;">
-          <details style="background:var(--surface);border:1px solid var(--border);padding:12px;border-radius:6px;">
-            <summary style="cursor:pointer;color:var(--cyan);font-weight:600;">Quick start &amp; install</summary>
-            <pre style="background:transparent;color:var(--muted);padding-top:8px;font-family:'DM Mono',monospace;font-size:0.82rem;white-space:pre-wrap;">
-git clone https://github.com/awaaladin/SHACK360_pkg.git
-cd SHACK360_pkg
-python -m venv venv
-# Windows PowerShell
-.\venv\Scripts\Activate.ps1
-# macOS / Linux
-source venv/bin/activate
-pip install -r requirements.txt
-
-# Optional: build the C++ hasher (if present)
-cd hasher || true
-mkdir -p build && cd build
-cmake .. && cmake --build . --config Release
-cd ../..
-
-# Install editable package
-pip install -e .
-
-# Run migrations (if the project has Django apps)
-python manage.py migrate
-python manage.py runserver
-            </pre>
-            <div style="margin-top:8px;color:var(--muted);font-size:0.82rem;">Follow the repository's <a href="https://github.com/awaaladin/shark360_pkg-DOC" target="_blank" style="color:var(--cyan);">Docs</a> and <span style="font-weight:600;color:var(--muted);">DESIGN_DOCUMENT.md</span> for configuration, C++ build details, and deployment notes.</div>
-          </details>
         </div>
       </div>
 
